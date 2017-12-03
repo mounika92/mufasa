@@ -8,7 +8,7 @@ module.exports = {
 
   categories: function(req, res) {
     models.category.findAll().then(categories => {
-      helper.handleResponse(res, null, 'category', categories);
+      helper.handleResponse(res, null, 'category', { categories });
     });
   }
 }
